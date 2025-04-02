@@ -3794,9 +3794,10 @@ input, select, textarea {
 }
 
 .circle-image {
-    width: 150px; /* Adjust size as needed */
-    height: 150px; /* Ensure width and height are the same */
-    object-fit: cover; /* Ensures the image fills the circle */
-    border-radius: 50%; /* Makes the image circular */
-    border: 3px solid #333; /* Optional: Adds a border around the image */
+    width: 150px; /* Adjust to desired size */
+    height: 150px; /* Keep it equal to width for a perfect circle */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    border-radius: 50%; /* Makes it circular */
+    border: 3px solid #333; /* Optional border */
 }
+
