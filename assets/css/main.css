@@ -3790,14 +3790,14 @@ input, select, textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Centering the image vertically */
+    margin-bottom: 10px; /* Adjust spacing before the name */
 }
 
 .circle-image {
-    width: 150px; /* Adjust to desired size */
-    height: 150px; /* Keep it equal to width for a perfect circle */
-    object-fit: cover; /* Ensures the image fits within the circle */
-    border-radius: 50%; /* Makes it circular */
-    border: 3px solid #333; /* Optional border */
+    width: 100px; /* Match size with other icons */
+    height: 100px; /* Keep aspect ratio */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #333; /* Optional */
 }
 
