@@ -3808,7 +3808,7 @@ input, select, textarea {
     border-radius: 100%;
     border: 3px solid #333; /* Optional */
     max-width: 180px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
+    height: 100px; /* Maintain aspect ratio */
 }
 
 .features h3 {
