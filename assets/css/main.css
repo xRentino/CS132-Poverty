@@ -3798,16 +3798,13 @@ input, select, textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0px; /* Adjust spacing before the name */
+    margin-bottom: 10px; /* Adjust spacing before the name */
 }
 
 .circle-image {
-    width: 500px; /* Match size with other icons */
-    height: 10px; /* Keep aspect ratio */
+    width: 100px; /* Match size with other icons */
+    height: 100px; /* Keep aspect ratio */
     border-radius: 50%;
     border: 3px solid #333; /* Optional */
 }
 
-.features h3 {
-    margin-top: 5px; /* Reduce space between image/icon and name */
-}
