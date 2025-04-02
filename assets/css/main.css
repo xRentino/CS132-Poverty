@@ -2812,10 +2812,10 @@ input, select, textarea {
 		padding: 0;
 		list-style: none;
 		display: flex;
-    	justify-content: center;
-    	gap: 40px; /* Adjust spacing between items */
-    	flex-wrap: wrap; /* Prevents items from breaking into another line */
-    	text-align: center; /* Centers text */
+    		justify-content: center;
+    		gap: 40px; /* Adjust spacing between items */
+    		flex-wrap: wrap; /* Prevents items from breaking into another line */
+    		text-align: center; /* Centers text */
 	}
 
 		.features li {
@@ -3809,3 +3809,6 @@ input, select, textarea {
     border: 3px solid #333; /* Optional */
 }
 
+.features h3 {
+    margin-top: 5px; /* Reduce space between image/icon and name */
+}
