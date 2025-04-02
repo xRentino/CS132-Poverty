@@ -3798,7 +3798,7 @@ input, select, textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px; /* Adjust spacing before the name */
+    margin-bottom: 0px; /* Adjust spacing before the name */
 }
 
 .circle-image {
