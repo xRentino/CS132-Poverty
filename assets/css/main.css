@@ -3803,7 +3803,7 @@ input, select, textarea {
 
 .circle-image {
     width: 500px; /* Match size with other icons */
-    height: 1000px; /* Keep aspect ratio */
+    height: 10px; /* Keep aspect ratio */
     border-radius: 50%;
     border: 3px solid #333; /* Optional */
 }
