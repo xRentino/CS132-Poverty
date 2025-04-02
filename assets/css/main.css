@@ -2811,6 +2811,11 @@ input, select, textarea {
 		margin: 0 0 3em -2em;
 		padding: 0;
 		list-style: none;
+		display: flex;
+    	justify-content: center;
+    	gap: 40px; /* Adjust spacing between items */
+    	flex-wrap: wrap; /* Prevents items from breaking into another line */
+    	text-align: center; /* Centers text */
 	}
 
 		.features li {
@@ -2818,6 +2823,9 @@ input, select, textarea {
 			margin-left: 2em;
 			margin-top: 3em;
 			padding: 0;
+			flex: 1;
+    			min-width: 200px; /* Prevents text from becoming too narrow */
+    			max-width: 250px; /* Keeps uniformity */
 		}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
