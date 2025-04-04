@@ -3814,3 +3814,18 @@ input, select, textarea {
     border-radius: 50%; /* Keeps it circular */
 }
 
+/* Hamdi's addition */
+.justified-list {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+.justified-list li {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+#conclusion p {
+    text-align: justify;
+}
