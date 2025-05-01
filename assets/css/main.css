@@ -3938,3 +3938,66 @@ input, select, textarea {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Collapsible Button */
+.collapsible {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 1px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+    background-color: #0056b3;
+}
+
+.collapsible:after {
+    content: '\002B'; /* Plus symbol */
+    font-size: 1.5rem;
+    float: right;
+}
+
+.collapsible.active:after {
+    content: '\2212'; /* Minus symbol */
+}
+
+/* Collapsible Content */
+.contentcollapse {
+    display: none;
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-top: 5px;
+	margin-bottom: 50px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animation for smooth appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bordered {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
