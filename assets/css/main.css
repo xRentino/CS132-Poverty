@@ -4175,3 +4175,13 @@ input, select, textarea {
     margin: 0 auto; /* Center the image */
     display: block; /* Ensure proper centering */
 }
+
+ul {
+    text-align: left; /* Aligns the text to the left */
+    padding-left: 0; /* Removes default padding */
+    margin-left: 0; /* Removes default margin */
+}
+
+ul li {
+    list-style-position: inside; /* Ensures bullet points are inside the content */
+}
