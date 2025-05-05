@@ -346,11 +346,102 @@
 						<!-- Exploration -->
 						<section id="exploration" class="main special">
 							<header class="major">
-								<h2>Exploration</h2>
-
-
-
+								<h2 style="color: white;">Exploratory Data Analysis</h2>
 							</header>
+
+							<div class="analysis-container">
+								<!-- RQ1 Analysis -->
+								<div class="analysis-card">
+									<h3 style="color: #e16462; font-size: 40px;"><span class="highlight-number">1.</span> Trends in Self-Rated Poverty (1985-2025)</h3>
+									<img src="exploratory_data_analysis/RQ1_poverty_combined_graph.png" alt="Self-Rated Poverty Trends" class="analysis-image large-image">
+									<div class="analysis-content">
+										<div class="analysis-text">
+											<p><strong style="color: #2196F3;">Key Insight:</strong> While there is a long-term downward trend, it's much slower than economic growth would suggest, indicating unequal distribution of economic benefits.</p>
+											<ul>
+													<li><span style="color: #FF5722; font-weight: bold;">Dominance of "Poor" Category:</span> The "Poor" category dominated from 1985-2000, fluctuating in the 60-70% range.</li>
+													<li><span style="color: #4CAF50; font-weight: bold;">Noticeable Decline:</span> A significant decline occurred from 2000-2010, reaching approximately 45% in 2010.</li>
+													<li><span style="color: #2196F3; font-weight: bold;">Pandemic Impact:</span> The COVID-19 pandemic caused a sharp spike back to 60% in 2020.</li>
+													<li>The "Not Poor" group has slowly increased from <10% in 1985 to ~25% in 2025.</li>
+											</ul>
+											<p><strong style="color: #2196F3;">Key Insight:</strong> While there is a long-term downward trend, it's much slower than economic growth would suggest, indicating unequal distribution of economic benefits.</p>
+										</div>
+									</div>
+								</div>
+								<hr>
+
+								<!-- RQ2 Analysis -->
+								<div class="analysis-card">
+									<h3 style="color: #b12a90; font-size: 40px;">2. Projected Poverty Levels for Next Decade</h3>
+									<img src="exploratory_data_analysis/nutshell_plot.pdf" alt="Projected Poverty Trends" class="analysis-image large-image">
+									<div class="analysis-content">
+										<div class="analysis-text">
+											<p><strong style="color: #4CAF50;">Hypothesis Validation:</strong> Our projection models suggest a continued gradual decline, but with important caveats.</p>
+											<ul>
+												<li>Polynomial regression projects "Poor" to decrease to ~40% by 2035</li>
+												<li>"Not Poor" may reach ~35% by 2035 under current trends</li>
+												<li>Borderline category remains stable at ~25%</li>
+											</ul>
+											<p><strong style="color: #2196F3;">Key Insight:</strong> At this rate, the Philippines won't reach poverty levels comparable to neighboring ASEAN countries until after 2040 without significant policy changes.</p>
+										</div>
+									</div>
+								</div>
+								<hr>
+
+								<!-- RQ3 Analysis -->
+								<div class="analysis-card">
+									<h3 style="color: #fca636; font-size: 40px;" >3. Impact of Economic Crises</h3>
+									<img src="exploratory_data_analysis/RQ3_events_combined_plot_screen_compressed.png" alt="Crisis Impact Analysis" class="analysis-image large-image">
+									<div class="analysis-content">
+										<div class="analysis-text">
+											<p><strong style="color: #4CAF50;">Hypothesis Validation:</strong> Strongly supported - crises consistently caused immediate spikes in self-rated poverty.</p>
+											<ul>
+												<li>1991 Pinatubo eruption: +12% poor rating within 6 months</li>
+												<li>1997 Asian Financial Crisis: +8% sustained for 2 years</li>
+												<li>2008 Global Crisis: +6% peak impact</li>
+												<li>COVID-19: Most severe at +15% within 3 months</li>
+											</ul>
+											<p><strong style="color: #2196F3;">Key Insight:</strong> Recovery times have shortened - from 5+ years after 1997 crisis to ~2 years post-COVID, suggesting improving economic resilience.</p>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<!-- RQ4 Analysis -->
+								<div class="analysis-card">
+									<h3 style="color: #fcffa4; font-size: 40px;">4. Regional Comparisons</h3>
+									<div class="analysis-content">
+										<img src="exploratory_data_analysis/RQ4_respondent_count_by_area_subplots.png" alt="Regional Analysis" class="analysis-image">
+										<div class="analysis-text">
+											<p><strong style="color: #4CAF50;" class="highlight-text">Hypothesis Validation:</strong> Partially supported - Metro Manila shows lower poverty, but not always the lowest.</p>
+											<ul>
+												<li>Metro Manila: Consistently 10-15% below national average</li>
+												<li>Visayas: Highest poverty levels (often 5-10% above national average)</li>
+												<li>Mindanao: Shows most volatility due to conflict and disasters</li>
+												<li>Balance Luzon: Closest to national average</li>
+											</ul>
+											<p><strong style="color: #2196F3;">Key Insight:</strong> The urban-rural divide persists, with Metro Manila maintaining an advantage, but regional disparities are more complex than simple capital vs provinces.</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Additional Insights -->
+								<div class="analysis-card full-width">
+									<h3 style="color: #03A9F4;">Additional Insights from the Data</h3>
+									<div class="additional-insights">
+										<div class="insight-box">
+											<h4 style="color: #8BC34A;">Borderline Phenomenon</h4>
+											<p>The stable ~25% borderline population suggests a large group of vulnerable near-poor who frequently transition between categories during economic shocks.</p>
+										</div>
+										<div class="insight-box">
+											<h4 style="color: #FF5722;">Recovery Patterns</h4>
+											<p>Post-crisis recoveries show increasingly V-shaped patterns, except for COVID-19 which had a slower U-shaped recovery.</p>
+										</div>
+										<div class="insight-box">
+											<h4 style="color: #9C27B0;">Seasonal Effects</h4>
+											<p>Quarterly data reveals consistent 2-3% poorer self-ratings in Q3 (typhoon season) compared to Q1, particularly in Visayas and Mindanao.</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</section>
 
 						<!-- Conclusion -->
