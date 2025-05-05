@@ -34,8 +34,8 @@
 							<li><a href="#intro" class="active">Introduction</a></li>
 							<li><a href="#background">Background</a></li>
 							<li><a href="#data">Data</a></li>
-							<li><a href="#exploration">Exploration</a></li>
 							<li><a href="#methods">Methods</a></li>
+							<li><a href="#exploration">Exploration</a></li>
 							<li><a href="#results">Results</a></li>
 							<li><a href="#conclusion">Conclusion</a></li>
 							<li><a href="#team">Team</a></li>
@@ -245,22 +245,12 @@
 								</footer>
 							</section>
 							
-						<!-- Exploration -->
-							<section id="exploration" class="main special">
-								<header class="major">
-									<h2>Exploration</h2>
-								</header>
-
-
-
-
-							</section>
-
 						<!-- Methods -->
 							<section id="methods" class="main special">
 								<header class="major">
 									<h2>Methods</h2>
 								</header>
+
 								<ul class="features">
 									<li>
 										<span class="icon solid major style1 fa-code"></span>
@@ -274,7 +264,6 @@
 											<button class="collapsible">Standarization</button>
 											<div class="contentcollapse">
 												<p>Data cleaning involved handling missing values, removing duplicates, and ensuring consistency in the dataset. Missing values were imputed using statistical methods, and outliers were identified and addressed to ensure the accuracy of the analysis.</p>	
-												<br>
 												<p>Data standardization was performed to ensure that all variables were on the same scale. This was particularly important for the analysis of self-rated poverty. For proper scaling, max survey data was limited to the minimum amount of respondents on the SWS surveys.</p>
 											</div>
 										</div>
@@ -283,26 +272,63 @@
 									<li>
 										<span class="icon major style3 fa-copy"></span>
 										<div class="bordered">
-											<h3>Model Selection and Training</h3>
-											<button class="collapsible">Data Model</button>
+											<h3>Feature Extraction</h3>
+											<button class="collapsible">Time Series Creation</button>
 											<div class="contentcollapse">
-												<p>Data cleaning involved handling missing values, removing duplicates, and ensuring consistency in the dataset. Missing values were imputed using statistical methods, and outliers were identified and addressed to ensure the accuracy of the analysis.</p>	
-												<br>
-												<p>Data standardization was performed to ensure that all variables were on the same scale. This was particularly important for the analysis of self-rated poverty. For proper scaling, max survey data was limited to the minimum amount of respondents on the SWS surveys.</p>
+												<p>The independent variable (x) is the computed decimal year.</p>
 											</div>
 
-											<button class="collapsible">Training & Testing</button>
+											<button class="collapsible">Target Variables</button>
 											<div class="contentcollapse">
-												<p>Data cleaning involved handling missing values, removing duplicates, and ensuring consistency in the dataset. Missing values were imputed using statistical methods, and outliers were identified and addressed to ensure the accuracy of the analysis.</p>	
-												<br>
-												<p>Data standardization was performed to ensure that all variables were on the same scale. This was particularly important for the analysis of self-rated poverty. For proper scaling, max survey data was limited to the minimum amount of respondents on the SWS surveys.</p>
+												<p>The target columns are:</p>
+												<ul>
+													<li>Poor Respondent Count</li>
+													<li>Not Poor Respondent Count</li>
+													<li>Borderline Respondent Count</li>	
+												</ul>
+												<p>These values are extracted into y_poor, y_not_poor, and y_borderline.</p>
 											</div>
 										</div>
 									</li>
 									<li>
 										<span class="icon major style5 fa-gem"></span>
-										<h3>Model Validation and Evaluation</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<div class="bordered">
+											<h3>Model Training</h3>
+											<button class="collapsible">Linear Regression</button>
+											<div class="contentcollapse">
+												<p>Data is split into training and testing sets using train_test_split.</p>	
+												<p>Each class (Poor, Not Poor, Borderline) is modeled using LinearRegression.</p>
+												<p>Metrics such as mean squared error and R² score are printed to assess model performance.</p>
+											</div>
+
+											<button class="collapsible">Polynomial Regression</button>
+											<div class="contentcollapse">
+												<p>Polynomial regression of degree 3 is applied using PolynomialFeatures and Pipeline.</p>	
+												<p>This captures non-linear trends in the time series data.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<span class="icon major style5 fa-gem"></span>
+										<div class="bordered">
+											<h3>Visualization</h3>
+											<button class="collapsible">Styling</button>
+											<div class="contentcollapse">
+												<p>A dark background theme is applied for a modern, serious tone. Fonts and figure sizes are customized for clarity in small plots.</p>	
+												<p>The graph includes categorized legends for data points and trend lines, as well as a styled title reflecting the research question.</p>
+											</div>
+
+											<button class="collapsible">Correlation</button>
+											<div class="contentcollapse">
+												<p>Raw data points for each group (Poor, Not Poor, Borderline) are plotted with color-coding and reduced opacity for readability.</p>	
+												<p>Polynomial trend lines are overlaid to show projected trends for the next decade.</p>
+											</div>
+
+											<button class="collapsible">Historical Context</button>
+											<div class="contentcollapse">
+												<p>Significant historical events (e.g., People Power Revolution, COVID-19 Pandemic) are annotated to relate socioeconomic shocks with data trends.</p>
+											</div>
+										</div>
 									</li>
 								</ul>
 								<!-- <footer class="major">
@@ -311,6 +337,16 @@
 									</ul>
 								</footer> -->
 							</section>
+
+						<!-- Exploration -->
+						<section id="exploration" class="main special">
+							<header class="major">
+								<h2>Exploration</h2>
+
+
+
+							</header>
+						</section>
 
 						<!-- Conclusion -->
 							<section id="conclusion" class="main special">
