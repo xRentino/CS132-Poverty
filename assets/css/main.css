@@ -4090,3 +4090,11 @@ input, select, textarea {
     color: #555;
     line-height: 1.5;
 }
+
+.box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
