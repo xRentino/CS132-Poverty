@@ -273,19 +273,24 @@
 										<span class="icon major style3 fa-copy"></span>
 										<div class="bordered">
 											<h3>Feature Extraction</h3>
-											<button class="collapsible">Time Series Creation</button>
+											<button class="collapsible" style="font-size: 16px; padding-bottom: 50px;">Time Series Creation</button>
 											<div class="contentcollapse">
 												<p>The independent variable (x) is the computed decimal year.</p>
+												<p>That is, the month is translated into its natural number correspondent (ex: October = 10) and is divided by 12.</p>
 											</div>
 
 											<button class="collapsible">Target Variables</button>
 											<div class="contentcollapse">
 												<p>The target columns are:</p>
-												<ul>
-													<li>Poor Respondent Count</li>
-													<li>Not Poor Respondent Count</li>
-													<li>Borderline Respondent Count</li>	
-												</ul>
+												<div class="box">
+													<strong>Poor Respondent Count</strong>
+												</div>
+												<div class="box">
+													<strong>Not Poor Respondent Count</strong>
+												</div>
+												<div class="box">
+													<strong>Borderline Respondent Count</strong>
+												</div>
 												<p>These values are extracted into y_poor, y_not_poor, and y_borderline.</p>
 											</div>
 										</div>
@@ -301,7 +306,7 @@
 												<p>Metrics such as mean squared error and R² score are printed to assess model performance.</p>
 											</div>
 
-											<button class="collapsible">Polynomial Regression</button>
+											<button class="collapsible" style="font-size: 15px; padding-bottom: 50px; padding-top: 7px;">Polynomial Regression</button>
 											<div class="contentcollapse">
 												<p>Polynomial regression of degree 3 is applied using PolynomialFeatures and Pipeline.</p>	
 												<p>This captures non-linear trends in the time series data.</p>
