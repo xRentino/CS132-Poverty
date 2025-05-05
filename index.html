@@ -254,14 +254,15 @@
 								<ul class="features">
 									<li>
 										<span class="icon solid major style1 fa-database"></span>
-										<div class="bordered">
+										<div class="bordered" style="width: fit-content;">
 											<h3>Data Preprocessing</h3>
-											<button class="collapsible">Data Gathering</button>
+
+											<button class="collapsible" style="width: max-content;">Data Gathering</button>
 											<div class="contentcollapse">
 												<p>The data collected from Social Weather Stations (SWS) was organized into a structured table with five columns: year, month, poor, borderline, and not poor. The first two columns represent the time period of each survey, while the last three contain the percentage of respondents who self-rated themselves as poor, borderline, or not poor. This format allowed for easy identification of trends and patterns over time.</p>
 											</div>
 
-											<button class="collapsible">Standarization</button>
+											<button class="collapsible" style="width: max-content;">Standarization</button>
 											<div class="contentcollapse">
 												<p>Data cleaning involved handling missing values, removing duplicates, and ensuring consistency in the dataset. Missing values were imputed using statistical methods, and outliers were identified and addressed to ensure the accuracy of the analysis.</p>	
 												<p>Data standardization was performed to ensure that all variables were on the same scale. This was particularly important for the analysis of self-rated poverty. For proper scaling, max survey data was limited to the minimum amount of respondents on the SWS surveys.</p>
@@ -271,15 +272,16 @@
 									</li>
 									<li>
 										<span class="icon solid major style2 fa-cogs"></span>
-										<div class="bordered">
+										<div class="bordered" style="width: fit-content;">
 											<h3>Feature Extraction</h3>
-											<button class="collapsible" style="font-size: 16px; padding-bottom: 50px;">Time Series Creation</button>
+
+											<button class="collapsible" style="width: max-content;">Time Series Creation</button>
 											<div class="contentcollapse">
 												<p>The independent variable (x) is the computed decimal year.</p>
 												<p>That is, the month is translated into its natural number correspondent (ex: October = 10) and is divided by 12.</p>
 											</div>
 
-											<button class="collapsible">Target Variables</button>
+											<button class="collapsible" style="width: max-content;">Target Variables</button>
 											<div class="contentcollapse">
 												<p>The target columns are:</p>
 												<div class="box">
@@ -297,16 +299,17 @@
 									</li>
 									<li>
 										<span class="icon solid major style3 fa-robot"></span>
-										<div class="bordered">
+										<div class="bordered" style="width: fit-content;">
 											<h3>Model Training</h3>
-											<button class="collapsible">Linear Regression</button>
+
+											<button class="collapsible" style="width: max-content;">Linear Regression</button>
 											<div class="contentcollapse">
 												<p>Data is split into training and testing sets using train_test_split.</p>	
 												<p>Each class (Poor, Not Poor, Borderline) is modeled using LinearRegression.</p>
 												<p>Metrics such as mean squared error and R² score are printed to assess model performance.</p>
 											</div>
 
-											<button class="collapsible" style="font-size: 15px; padding-bottom: 50px; padding-top: 7px;">Polynomial Regression</button>
+											<button class="collapsible" style="width: max-content;">Polynomial Regression</button>
 											<div class="contentcollapse">
 												<p>Polynomial regression of degree 3 is applied using PolynomialFeatures and Pipeline.</p>	
 												<p>This captures non-linear trends in the time series data.</p>
@@ -315,32 +318,28 @@
 									</li>
 									<li>
 										<span class="icon major style5 fa-gem"></span>
-										<div class="bordered">
+										<div class="bordered" style="width: fit-content;">
 											<h3>Visualization</h3>
-											<button class="collapsible">Styling</button>
+
+											<button class="collapsible" style="width: max-content;">Styling</button>
 											<div class="contentcollapse">
 												<p>A dark background theme is applied for a modern, serious tone. Fonts and figure sizes are customized for clarity in small plots.</p>	
 												<p>The graph includes categorized legends for data points and trend lines, as well as a styled title reflecting the research question.</p>
 											</div>
 
-											<button class="collapsible">Correlation</button>
+											<button class="collapsible" style="width: max-content;">Correlation</button>
 											<div class="contentcollapse">
 												<p>Raw data points for each group (Poor, Not Poor, Borderline) are plotted with color-coding and reduced opacity for readability.</p>	
 												<p>Polynomial trend lines are overlaid to show projected trends for the next decade.</p>
 											</div>
 
-											<button class="collapsible">Historical Context</button>
+											<button class="collapsible" style="width: max-content;">Historical Context</button>
 											<div class="contentcollapse">
 												<p>Significant historical events (e.g., People Power Revolution, COVID-19 Pandemic) are annotated to relate socioeconomic shocks with data trends.</p>
 											</div>
 										</div>
 									</li>
 								</ul>
-								<!-- <footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer> -->
 							</section>
 
 						<!-- Exploration -->
