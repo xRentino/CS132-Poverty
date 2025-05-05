@@ -4098,3 +4098,80 @@ input, select, textarea {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+
+/* Exploration Section Styles */
+#exploration {
+    background-color: #000000; /* Set background color to black */
+    color: #ffffff; /* Set text color to white for better contrast */
+    padding: 2rem; /* Add padding for spacing */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.analysis-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.analysis-card {
+    background: #000;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.analysis-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.analysis-image {
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.analysis-text {
+    color: #ffffff; /* Set text color to white for better contrast */
+    background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent black background */
+    padding: 15px; /* Add padding for better readability */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.additional-insights {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.insight-box {
+    flex: 1;
+    background: rgba(40, 40, 60, 0.6);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #4c5e96;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+    .analysis-content {
+        flex-direction: column;
+    }
+    .analysis-image, .analysis-text {
+        width: 100%;
+    }
+    .additional-insights {
+        flex-direction: column;
+    }
+}
+
+.large-image {
+    width: 100%; /* Increase the width to make the image larger */
+    max-width: 100%; /* Ensure it doesn't exceed the container */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure proper centering */
+}
