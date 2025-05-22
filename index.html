@@ -344,6 +344,101 @@
 							<header class="major">
 								<h2 style="color: white;">Exploratory Data Analysis</h2>
 							</header>
+							
+							<div class="eda-subsection" style="background: #181f2a; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); padding: 2em 2em 1em 2em; margin: 2em 0;">
+								<header style="border-left: 6px solid #03A9F4; padding-left: 1em; margin-bottom: 1em;">
+									<h2 style="color: #03A9F4; margin-bottom: 0.2em; font-size: 2em;">Data Visualization</h2>
+									<p style="color: #b0c4d8; font-size: 1.1em; margin: 0;">
+										Visual highlights from our exploratory data analysis (EDA) of self-rated poverty in the Philippines.
+									</p>
+								</header>
+								<div class="analysis-card" style="background: #222b3a; border-radius: 10px; padding: 1.5em; margin-bottom: 2em;">
+									<h3 style="color: #03A9F4;">Self-Rated Poverty Over Time</h3>
+									<img src="exploratory_data_analysis/plot_results/stacked_area_plot.png" alt="Stacked Area Plot of Poverty Status Over Time" class="analysis-image large-image" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+									<ul style="text-align:left; margin: 1em 0 0 2em; color: #b0c4d8; font-size: 1em;">
+										<li><span style="font-weight:bold; color:#fff;">Poor</span> dominated the early years, often above 60%, but shows a slow decline after 2000.</li>
+										<li><span style="font-weight:bold; color:#fff;">Borderline</span> fluctuates, representing a large, vulnerable group that rises during economic shocks.</li>
+										<li><span style="font-weight:bold; color:#fff;">Not Poor</span> has increased gradually, but remains a minority even in recent years.</li>
+									</ul>
+									<span style="display:block; margin-top:1em; font-weight:bold; color:#03A9F4; font-size:1.1em;">Key Insights:</span>
+									<ul style="text-align:left; margin: 0.5em 0 0 2em; color: #b0c4d8; font-size: 1em;">
+										<li>The persistent high values for <span style="font-weight:bold; color:#fff;">Poor</span> highlight the chronic nature of self-rated poverty in the Philippines.</li>
+										<li>The stable ~25% <span style="font-weight:bold; color:#fff;">Borderline</span> population suggests many households are at risk of falling into poverty during crises.</li>
+										<li>The slow growth of the <span style="font-weight:bold; color:#fff;">Not Poor</span> group underscores the need for more inclusive economic growth.</li>
+									</ul>
+								</div>
+								
+								<div class="analysis-card" style="background: #222b3a; border-radius: 10px; padding: 1.5em;">
+									<h3 style="color: #FF7043;">Distribution of Poverty Status Percentages</h3>
+									<img src="exploratory_data_analysis/plot_results/distribution_poverty_status.png" alt="Distribution of Poverty Status" class="analysis-image large-image" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+									<p style="font-size: 1em; color: #b0c4d8; margin-top: 0.5em;">
+										This histogram shows that most survey periods had a high percentage of respondents rating themselves as <span style="font-weight:bold; color:#fff;">Poor</span>, while <span style="font-weight:bold; color:#fff;">Not Poor</span> responses are concentrated at much lower percentages. The <span style="font-weight:bold; color:#fff;">Borderline</span> group is spread out, reflecting economic vulnerability.
+									</p>
+									<!-- Enhanced summary statistics table -->
+									<div style="margin-top:1.5em;">
+										<h4 style="color:#03A9F4; margin-bottom:0.5em;">Summary Statistics</h4>
+										<table style="width:100%; color:#b0c4d8; background:#181f2a; border-collapse:collapse; margin-bottom:1em;">
+											<thead>
+												<tr style="background:#222b3a;">
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">Status</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">Mean (%)</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">Std Dev</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">Min</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">25%</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">50% (Median)</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">75%</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">Max</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">Unique Values</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td style="padding:8px;"><span style="font-weight:bold; color:#fff;">Poor</span></td>
+													<td style="padding:8px;">54.2</td>
+													<td style="padding:8px;">8.7</td>
+													<td style="padding:8px;">38.0</td>
+													<td style="padding:8px;">48.0</td>
+													<td style="padding:8px;">54.0</td>
+													<td style="padding:8px;">61.0</td>
+													<td style="padding:8px;">74.0</td>
+													<td style="padding:8px;">70</td>
+												</tr>
+												<tr>
+													<td style="padding:8px;"><span style="font-weight:bold; color:#fff;">Borderline</span></td>
+													<td style="padding:8px;">24.7</td>
+													<td style="padding:8px;">5.2</td>
+													<td style="padding:8px;">13.0</td>
+													<td style="padding:8px;">21.0</td>
+													<td style="padding:8px;">25.0</td>
+													<td style="padding:8px;">29.0</td>
+													<td style="padding:8px;">38.0</td>
+													<td style="padding:8px;">65</td>
+												</tr>
+												<tr>
+													<td style="padding:8px;"><span style="font-weight:bold; color:#fff;">Not Poor</span></td>
+													<td style="padding:8px;">21.1</td>
+													<td style="padding:8px;">6.1</td>
+													<td style="padding:8px;">6.0</td>
+													<td style="padding:8px;">16.0</td>
+													<td style="padding:8px;">20.0</td>
+													<td style="padding:8px;">25.0</td>
+													<td style="padding:8px;">38.0</td>
+													<td style="padding:8px;">60</td>
+												</tr>
+											</tbody>
+										</table>
+										<p style="font-size:0.95em; color:#b0c4d8;">
+											<span style="font-weight:bold; color:#03A9F4;">Note:</span> 
+											Values are based on the national-level SWS survey data (1985–2025). <span style="font-weight:bold; color:#fff;">Poor</span> is the most common response, with a mean above 50%. <span style="font-weight:bold; color:#fff;">Borderline</span> and <span style="font-weight:bold; color:#fff;">Not Poor</span> are less frequent and more variable.
+										</p>
+									</div>
+
+								</div>
+
+								<!-- EDA Data Visualization link to full eda page -->
+								<p style="margin-top: 50px; margin-bottom: 15px;">For a clearer picture and greater details about out data visualization, click the text below.</p>
+								<a style="color:#03A9F4;" href="https://github.com/xRentino/CS132-Poverty/blob/main/exploratory_data_analysis/DataVisualization.ipynb" target="_blank">Data Visualization and Exploration</a>
+							</div>
 
 							<div class="analysis-container">
 								<!-- RQ1 Analysis -->
@@ -363,12 +458,11 @@
 										</div>
 									</div>
 								</div>
-								<hr>
 
 								<!-- RQ2 Analysis -->
 								<div class="analysis-card">
 									<h3 style="color: #b12a90; font-size: 40px;">2. Projected Poverty Levels for Next Decade</h3>
-									<img src="exploratory_data_analysis/plot_results/RQ2_poverty_combined_graph_extended.png" alt="Projected Poverty Trends" class="analysis-image large-image">
+									<img src="exploratory_data_analysis/plot_results/nutshell_plot.pdf" alt="Projected Poverty Trends" class="analysis-image large-image">
 									<div class="analysis-content">
 										<div class="analysis-text">
 											<p><strong style="color: #4CAF50;">Hypothesis Validation:</strong> Our projection models suggest a complete reversal with important caveats.</p>
@@ -437,6 +531,12 @@
 										</div>
 									</div>
 								</div>
+
+																<!-- Full RQ Details Link-->
+								<p>To see our source code for more details on the implementation of each of our research questions graphs, click the button below.</p>
+								<a style="margin-top: -50px; background-color:#eff1f2;" href="https://github.com/xRentino/CS132-Poverty/tree/main/exploratory_data_analysis" target="_blank" class="button">Exploratory Data Analysis Files</a>
+								<hr>
+
 							</div>
 						</section>
 
