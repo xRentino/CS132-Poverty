@@ -4185,3 +4185,20 @@ ul {
 ul li {
     list-style-position: inside; /* Ensures bullet points are inside the content */
 }
+
+.warning {
+	font-size: 40px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	color: white !important;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px;
+	border: 5px solid #ff3b3b;
+	background-color: #1a1a1a;
+	box-shadow: 0 0 px #ff3b3b;
+	max-width: 100%;
+	margin-top: 10rem;
+	/* Color the text white */
+	color: #ffffff;
+}
