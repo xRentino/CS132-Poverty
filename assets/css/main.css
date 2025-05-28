@@ -4190,15 +4190,29 @@ ul li {
 	font-size: 40px;
 	letter-spacing: 1px;
 	font-weight: 500;
-	color: white !important;
+	color: #ffffff !important;
 	text-align: center;
 	text-transform: uppercase;
 	padding: 5px;
-	border: 10px solid #e07884;
-	background-color: #1a1a1a;
+	background-color: #000000;
 	box-shadow: 0 0 px #ff3b3b;
 	max-width: 100%;
 	margin-top: 10rem;
 	/* Color the text white */
-	color: #ffffff;
+}
+
+/* ID for call to action */
+#call-to-action {
+	background-color: #000000; /* Blue background */
+	color: white; /* White text */
+	padding: 20px;
+	text-align: center;
+	border-radius: 8px;
+	margin-top: 20px;
+}
+
+.call-to-action-strong {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #a2d5ef !important ; /* White text */
 }
