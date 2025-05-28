@@ -32,7 +32,7 @@
 					<nav id="nav"> 
 						<ul style="text-align: center;">
 							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#background">Background</a></li>
+							<li><a href="#questions">Research Questions</a></li>
 							<li><a href="#data">Data</a></li>
 							<li><a href="#methods">Methods</a></li>
 							<li><a href="#exploration">Exploration</a></li>
@@ -45,8 +45,33 @@
 				<!-- Main -->
 					<div id="main">
 
+						<!-- Background -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Introduction</h2>
+										</header>
+										<p>Self-rated poverty is a widely used social indicator that reflects individuals' perceptions 
+										of their economic status. Unlike objective poverty measures based on income or consumption, 
+										self-rated poverty captures how people subjectively assess their well-being in relation to their 
+										socioeconomic environment. This perception is influenced by various factors, including economic 
+										conditions, inflation, employment opportunities, social policies, and cultural expectations.
+										<br><br>
+										In the Philippines (or any country of focus), self-rated poverty has been monitored through 
+										surveys since 1983, providing valuable insights into how individuals perceive their economic 
+										situation over time. The dataset covering self-rated poverty from 1983 to 2025 presents 
+										an opportunity to analyze long-term trends and examine how economic and social changes have 
+										influenced people's perceptions of poverty.</p>
+										<!-- <ul class="actions">
+											<li><a href="generic.html" class="button">Learn More</a></li>
+										</ul> -->
+									</div>
+								</div>
+							</section>
+						
 						<!-- Introduction -->
-						<section id="intro" class="main">
+						<section id="questions" class="main">
 							<div class="spotlight">
 								<div class="content">
 									<header class="major">
@@ -74,31 +99,6 @@
 								<span class="image"><img src="images/pic01.jpg" alt="" /></span>
 							</div>
 						</section>
-
-						<!-- Background -->
-							<section id="background" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Background</h2>
-										</header>
-										<p>Self-rated poverty is a widely used social indicator that reflects individuals' perceptions 
-										of their economic status. Unlike objective poverty measures based on income or consumption, 
-										self-rated poverty captures how people subjectively assess their well-being in relation to their 
-										socioeconomic environment. This perception is influenced by various factors, including economic 
-										conditions, inflation, employment opportunities, social policies, and cultural expectations.
-										<br><br>
-										In the Philippines (or any country of focus), self-rated poverty has been monitored through 
-										surveys since 1983, providing valuable insights into how individuals perceive their economic 
-										situation over time. The dataset covering self-rated poverty from 1983 to 2025 presents 
-										an opportunity to analyze long-term trends and examine how economic and social changes have 
-										influenced people's perceptions of poverty.</p>
-										<!-- <ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul> -->
-									</div>
-								</div>
-							</section>
 
 						<!-- Data -->
 							<section id="data" class="main special">
@@ -299,17 +299,19 @@
 										<div class="bordered" style="width: fit-content;">
 											<h3>Model Training</h3>
 
-											<button class="collapsible" style="width: max-content;">Linear Regression</button>
+											<!-- <button class="collapsible" style="width: max-content;">Linear Regression</button>
 											<div class="contentcollapse">
 												<p>Data is split into training and testing sets using train_test_split.</p>	
 												<p>Each class (Poor, Not Poor, Borderline) is modeled using LinearRegression.</p>
 												<p>Metrics such as mean squared error and R² score are printed to assess model performance.</p>
-											</div>
+											</div> -->
 
 											<button class="collapsible" style="width: max-content;">Polynomial Regression</button>
 											<div class="contentcollapse">
 												<p>Polynomial regression of degree 3 is applied using PolynomialFeatures and Pipeline.</p>	
-												<p>This captures non-linear trends in the time series data.</p>
+												<p>It models curved or complex patterns that a straight line can't capture.</p>
+												<p>It handles more nuanced relationships between variables that go beyond simple linear trends.</p>
+												<p>When a linear model underfits the data or fails to reflect key trends, polynomial regression provides a more accurate alternative.</p>
 											</div>
 										</div>
 									</li>
@@ -556,6 +558,23 @@
 								</ol>
 								
 								<p>In conclusion, while the Philippines has made some strides toward improving its poverty situation, there is much work to be done. The persistence of high levels of self-rated poverty underscores the need for more effective, comprehensive, and inclusive poverty reduction strategies that address the root causes of inequality and improve the quality of life for all Filipinos.</p>
+							
+								<header class="major">
+									<h2>Call to Action</h2>
+									<p>Our findings highlight a mix of progress and warning signs in self-rated poverty trends in the Philippines. While there's been a general decline since 1985, <strong>future projections suggest troubling reversals unless meaningful interventions are made</strong>. To build a more equitable future, we recommend the following:</p>
+								</header>
+
+								<ol class="justified-list">
+                                    <li><strong>Expand support for the borderline population</strong>, who consistently make up about 25% of respondents and remain highly vulnerable to economic shocks, often shifting back into poverty during crises.</li>
+                                    <li><strong>Ensure more equitable growth distribution</strong>, especially in historically underserved regions like Mindanao and parts of the Visayas, where poverty rates remain high and recovery is inconsistent.</li>
+                                    <li><strong>Reinforce crisis preparedness and response systems</strong>, capitalizing on the trend of faster post-crisis recoveries to build greater economic resilience for future shocks.</li>
+                                    <li><strong>Integrate regional and seasonal insights into policymaking</strong>, particularly addressing the recurring increase in poverty self-ratings during Q3, which coincides with typhoon season in many rural areas.</li>
+									<li><strong>Commit to long-term, data-informed strategies</strong>, so the steady progress of recent decades isn't undone and the poorest Filipinos can share in national prosperity.</li>
+								</ol>
+
+								<h3>Without decisive action, the slow progress made risks being undone. The data is clear:<br>
+								<strong>poverty is evolving and so must our solutions.</strong></h3>
+							
 							</section>
 						
 						<!-- Team -->
