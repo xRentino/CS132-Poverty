@@ -4197,7 +4197,7 @@ ul li {
 	background-color: #000000;
 	box-shadow: 0 0 px #ff3b3b;
 	max-width: 100%;
-	margin-top: 10rem;
+	margin-top: 1rem;
 	/* Color the text white */
 }
 
@@ -4210,5 +4210,14 @@ ul li {
 	border-radius: 8px;
 	margin-top: 20px;
 
+}
+
+#call-to-action h3 {
+	color: #ffffff; /* White text for the heading */
+}
+
+#call-to-action strong {
+	color: #ffffff; /* White text for the paragraph */
+	font-weight: bold;
 }
 
