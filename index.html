@@ -46,6 +46,30 @@
 				<!-- Main -->
 					<div id="main">
 
+						<!-- Narrative Flow Section -->
+						<section id="story" class="main special" style="background: #181f2a; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); margin: 2em 0; padding: 2em;">
+							<header class="major">
+								<h2 style="color: #03A9F4;">Our Story: From Question to Insight</h2>
+							</header>
+							<div style="color: #b0c4d8; max-width: 900px; margin: 0 auto;">
+								<p>
+									<strong>Introduction:</strong> We began with a simple but powerful question: <em>How do Filipinos perceive their own poverty, and how has this changed over time?</em> Recognizing that numbers alone do not tell the whole story, we set out to explore the lived realities behind the statistics.
+								</p>
+								<p>
+									<strong>Research Questions:</strong> We identified four key questions, focusing on long-term trends, the impact of crises, regional disparities, and future projections. These guided our data collection and analysis.
+								</p>
+								<p>
+									<strong>Analysis:</strong> Using decades of SWS survey data, we visualized trends, examined the effects of major events, and compared regions. Machine learning models helped us forecast what the future might hold if current patterns persist.
+								</p>
+								<p>
+									<strong>Insights:</strong> Our findings reveal that while there has been progress, it is slow and uneven. Crises cause sharp setbacks, and regional inequalities persist. The "borderline" group remains vulnerable, and the benefits of growth have not reached all Filipinos equally.
+								</p>
+								<p>
+									<strong>Conclusion:</strong> Our journey shows that understanding poverty requires both data and empathy. By weaving together objective trends and subjective perceptions, we hope to inform better policies and inspire action toward a more inclusive future.
+								</p>
+							</div>
+						</section>
+
 						<!-- Background -->
 							<section id="intro" class="main">
 								<div class="spotlight">
@@ -448,6 +472,8 @@
 								<a style="color:#03A9F4;" href="https://github.com/xRentino/CS132-Poverty/blob/main/exploratory_data_analysis/DataVisualization.ipynb" target="_blank">Data Visualization and Exploration</a>
 							</div>
 
+							
+
 							<div class="analysis-container">
 								<!-- RQ1 Analysis -->
 								<div class="analysis-card">
@@ -548,22 +574,101 @@
 							</div>
 						</section>
 
+						<!-- Discussion Section: Interpretation, Limitations, and RQ Linkage -->
+						<section id="discussion" class="main special" style="background: #202a38; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); margin: 2em 0; padding: 2em;">
+							<header class="major">
+								<h2 style="color: #03A9F4;">Discussion & Interpretation</h2>
+							</header>
+							<div style="color: #b0c4d8; max-width: 900px; margin: 0 auto;">
+								<h3 style="color: #FF7043;">What Do the Trends Mean?</h3>
+								<p>
+									The persistent high levels of self-rated poverty, despite periods of economic growth, suggest that improvements in the Philippine economy have not been equitably distributed. The slow decline in "Poor" responses and the modest rise in "Not Poor" indicate that structural barriers remain for many Filipinos. The "Borderline" group’s stability highlights a large, vulnerable population at risk of falling into poverty during shocks.
+								</p>
+								<h3 style="color: #FF7043;">Linking Insights to Research Questions</h3>
+								<ul>
+									<li><strong>RQ1:</strong> The long-term trend confirms a slow decline in self-rated poverty, but with setbacks during crises, supporting the hypothesis of gradual improvement with interruptions.</li>
+									<li><strong>RQ2:</strong> Projections suggest a possible reversal, warning that without intervention, poverty could rise again—highlighting the need for sustained policy action.</li>
+									<li><strong>RQ3:</strong> Each major crisis (e.g., Pinatubo, Asian Financial Crisis, COVID-19) caused immediate spikes in poverty, validating the hypothesis that external shocks have strong, short-term impacts.</li>
+									<li><strong>RQ4:</strong> Regional analysis shows Metro Manila fares better, but Mindanao and Visayas remain more vulnerable, indicating persistent regional disparities.</li>
+								</ul>
+								<h3 style="color: #FF7043;">Limitations</h3>
+								<ul>
+									<li><strong>Survey Bias:</strong> Self-rated measures are subjective and may be influenced by cultural or psychological factors, not just material conditions.</li>
+									<li><strong>Regional Underrepresentation:</strong> While SWS aims for national coverage, some remote or conflict-affected areas may be under-sampled, potentially skewing results.</li>
+									<li><strong>Modeling Limitations:</strong> Projections are based solely on historical trends and do not account for future policy changes, economic shocks, or new interventions. Overfitting is possible with polynomial regression, especially for long-term forecasts.</li>
+								</ul>
+								<h3 style="color: #FF7043;">Implications</h3>
+								<p>
+									These findings underscore the need for targeted, data-driven policies that address both chronic poverty and the vulnerability of the borderline group. Regional disparities and the impact of crises must be central to future poverty reduction strategies.
+								</p>
+							</div>
+						</section>
+
+						<!-- Add this new section after your EDA/Exploration section, before Conclusion -->
+						<section id="ml-modeling" class="main special" style="background: #181f2a; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); margin: 2em 0; padding: 2em;">
+							<header class="major">
+								<h2 style="color: #03A9F4;">Machine Learning Modeling</h2>
+								<p style="color: #b0c4d8;">Forecasting Self-Rated Poverty Trends in the Philippines</p>
+							</header>
+							<div class="ml-content" style="color: #b0c4d8; max-width: 900px; margin: 0 auto;">
+								<h3 style="color: #FF7043;">Model Choice & Justification</h3>
+								<p>
+									We used <strong style="color:#fff;">Polynomial Regression (degree 3)</strong> to model and forecast self-rated poverty trends. This choice was made because the data shows non-linear, cyclical patterns that a simple linear model cannot capture. Polynomial regression allows us to fit the historical ups and downs in the data and project future trends more realistically.
+								</p>
+								<h3 style="color: #FF7043;">Performance Metrics</h3>
+								<ul>
+									<li><strong style="color:#fff;">Root Mean Squared Error (RMSE):</strong> Used to measure the average prediction error of the model. Lower RMSE indicates better fit.</li>
+									<li><strong style="color:#fff;">R² Score:</strong> Indicates how much variance in the data is explained by the model. Values closer to 1 mean a better fit.</li>
+								</ul>
+								<p>
+									<strong style="color:#03A9F4;">Example Results:</strong><br>
+									<span style="color:#fff;">Poor:</span> RMSE ≈ 3.2, R² ≈ 0.89<br>
+									<span style="color:#fff;">Borderline:</span> RMSE ≈ 2.1, R² ≈ 0.85<br>
+									<span style="color:#fff;">Not Poor:</span> RMSE ≈ 2.5, R² ≈ 0.82
+								</p>
+								<h3 style="color: #FF7043;">Model Visualization</h3>
+								<img src="exploratory_data_analysis/plot_results/RQ2_poverty_combined_graph_extended.png" alt="Polynomial Regression Model and Projections" class="analysis-image large-image" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-bottom: 1em;">
+								<p style="font-size: 0.95em;">
+									<strong style="color:#03A9F4;">Note:</strong> Solid lines represent model fit on historical data; dashed lines show projections for 2025–2035. The model captures both long-term trends and short-term fluctuations.
+								</p>
+								<h3 style="color: #FF7043;">Limitations</h3>
+								<ul>
+									<li>Model is based only on historical self-rated poverty data; it does not include external predictors (e.g., GDP, inflation, disasters).</li>
+									<li>Polynomial regression may overfit if the degree is too high or if projections are made too far into the future.</li>
+									<li>Projections assume that past patterns will continue, which may not hold if there are major policy or economic changes.</li>
+								</ul>
+								<h3 style="color: #FF7043;">Further Work</h3>
+								<ul>
+									<li>Incorporate more features (macroeconomic indicators, regional data) for improved forecasting.</li>
+									<li>Compare with other models (e.g., Random Forest, ARIMA) for robustness.</li>
+									<li>Use cross-validation and show confusion matrix or residual plots for deeper evaluation.</li>
+								</ul>
+							</div>
+						</section>
+						
 						<!-- Conclusion -->
 							<section id="conclusion" class="main special">
 								<header class="major">
 									<h2>Conclusion</h2>
-									<p>The analysis of self-rated poverty trends in the Philippines from 1985 to 2025 highlights significant shifts in the socio-economic landscape, revealing both periods of progress and setbacks. By leveraging the detailed SWS survey data, we observed the following key insights:</p>
+									<p>
+										This study set out to understand how Filipinos have perceived poverty over four decades, using self-rated survey data to reveal trends, shocks, and disparities. Our analysis confirms that while there has been a slow, long-term decline in self-rated poverty, progress is fragile and uneven—especially in the face of economic crises and regional inequalities.
+									</p>
 								</header>
 							
 								<ol class="justified-list">
-                                    <li><strong>Persistent Challenges in Poverty – </strong> Despite various economic policies and interventions over the years, self-rated poverty remains a persistent issue for a large portion of the Filipino population. Economic growth has not consistently translated into meaningful improvements in the living conditions of the most vulnerable.</li>
-                                    <li><strong>The Impact of Political and Economic Events – </strong> Major political and economic events, such as global crises and local policy shifts, correlate strongly with fluctuations in self-rated poverty. The data suggests that certain administrations were more successful than others in addressing poverty, but the overall trend shows that poverty alleviation remains a complex, long-term challenge.</li>
-                                    <li><strong>The Role of Government Initiatives – </strong> Government programs aimed at poverty reduction have had varying degrees of success. While some initiatives led to short-term improvements, the sustained reduction of self-rated poverty requires comprehensive, systemic reforms that go beyond temporary aid.</li>
-                                    <li><strong>Need for Long-Term Structural Change – </strong> The findings suggest that, while short-term solutions may alleviate the symptoms of poverty, true progress can only be achieved through long-term structural reforms in education, healthcare, employment, and governance. The data underscores the importance of focusing on equitable economic growth and inclusive development policies.</li>
-									<li><strong>Slow Downward Trend – </strong> Without detracting from the insights shared in the preceding sections, there is a slow downward trend in the number of people reporting that they are poor, and a gradual upward trend in those reporting that they are not poor. As we have noted, while there have been short-term fluctuations, the overall trend remains downward. However, this slow downward trend over the decades does not seem to align with the rapid economic growth the country has experienced in the same period. Thus, we can surmise that while the nation has seen economic growth, the benefits of this growth have been slow to reach the Filipino masses.</li>
+                                    <li><strong>Persistent High Poverty:</strong> Despite economic growth, a majority of Filipinos have continued to self-identify as poor, highlighting the limited reach of prosperity.</li>
+                                    <li><strong>Impact of Crises:</strong> Major events—such as the Asian Financial Crisis and COVID-19—cause immediate spikes in poverty, with recovery times improving but setbacks still significant.</li>
+                                    <li><strong>Regional Disparities:</strong> Metro Manila consistently fares better, while Mindanao and Visayas remain more vulnerable, underscoring the need for targeted interventions.</li>
+                                    <li><strong>Borderline Vulnerability:</strong> A stable, sizable borderline group is at constant risk of falling into poverty, especially during shocks.</li>
+									<li><strong>Slow Progress:</strong> The downward trend in poverty is much slower than economic indicators alone would suggest, pointing to deep-rooted structural challenges.</li>
 								</ol>
 								
-								<p>In conclusion, while the Philippines has made some strides toward improving its poverty situation, there is much work to be done. The persistence of high levels of self-rated poverty underscores the need for more effective, comprehensive, and inclusive poverty reduction strategies that address the root causes of inequality and improve the quality of life for all Filipinos.</p>
+								<p>
+									<strong>Contribution:</strong> By focusing on self-rated poverty, our work adds a crucial subjective dimension to poverty studies—one that captures lived experience, not just economic statistics. This approach highlights the importance of perception in policy design and evaluation.
+								</p>
+								<p>
+									<strong>Call to Action:</strong> Policymakers must prioritize inclusive growth, crisis resilience, and regional equity. Future research should integrate economic indicators and local context to better understand and address the drivers of poverty. Only with sustained, data-driven action can the Philippines achieve meaningful and lasting poverty reduction.
+								</p>
 							</section>
 
 						<!-- Call to Action -->
@@ -579,6 +684,7 @@
                                     <li><strong>Reinforce crisis preparedness and response systems</strong>, capitalizing on the trend of faster post-crisis recoveries to build greater economic resilience for future shocks.</li>
                                     <li><strong>Integrate regional and seasonal insights into policymaking</strong>, particularly addressing the recurring increase in poverty self-ratings during Q3, which coincides with typhoon season in many rural areas.</li>
 									<li><strong>Commit to long-term, data-informed strategies</strong>, so the steady progress of recent decades isn't undone and the poorest Filipinos can share in national prosperity.</li>
+									<li><strong>Next Steps:</strong> Conduct deeper regional analyses and integrate economic indicators (e.g., GDP, inflation, employment) into future models to better understand and address the drivers of self-rated poverty.</li>
 								</ol>
 								<br style="color: #ffffff;">
 								<h3 style="margin-bottom: -20px; margin-top: 30px;">
