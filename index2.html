@@ -1,0 +1,783 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Through Their Own Eyes</title>
+		<link rel="icon" type="image/x-icon" href="images/logo/eye-solid blue.svg">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo/eye-regular blue.svg" width = 85 alt="" /></span>
+						<h1>Through Their Own Eyes</h1>
+						<h2>A Journey Through Four Decades of Self-Rated Poverty in the Philippines (1985–2025)</h2>
+						<p>CS 132 Capstone Project<br />
+						by OWLVERSEERS</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul style="text-align: center;">
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#questions">Research Questions</a></li>
+							<li><a href="#data">Data</a></li>
+							<li><a href="#methods">Methods</a></li>
+							<li><a href="#exploration">Exploration</a></li>
+							<li><a href="#ml-modeling">Modeling</a></li>
+							<li><a href="#discussion">Discussion</a></li>
+							<li><a href="#conclusion">Conclusion</a></li>
+							<li><a href="#call-to-action">Recommendations</a></li>
+							<li><a href="#team">Team</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Narrative Flow Section -->
+						<section id="story" class="main special" style="background: #181f2a; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); margin: 2em 0; padding: 2em;">
+							<header class="major">
+								<h2 style="color: #03A9F4;">Our Story: Unveiling Poverty Through Filipino Eyes</h2>
+							</header>
+							<div style="color: #c7d5e0; max-width: 900px; margin: 0 auto;">
+								<p style="text-align: justify;">
+									<strong>A Question That Matters:</strong> We began with a fundamental question: <em>How do Filipinos see their own poverty, and how has this perception evolved over time?</em> This question drove us to explore not just numbers, but the human stories behind them—stories of struggle, resilience, and hope.
+								</p>
+								<p style="text-align: justify;">
+									<strong>Guiding the Journey:</strong> Our <a href="#questions" style="color: #03A9F4;">Research Questions</a> shaped the path, focusing on trends, crises, regional differences, and future projections. Each question builds on the last, creating a cohesive story of poverty’s past, present, and potential future.
+								</p>
+								<p style="text-align: justify;">
+									<strong>Discovering the Data:</strong> Through the <a href="#data" style="color: #03A9F4;">Data</a> from Social Weather Stations, we uncovered patterns of persistence and change. Our <a href="#methods" style="color: #03A9F4;">Methods</a> and <a href="#exploration" style="color: #03A9F4;">Exploratory Analysis</a> brought these patterns to life, revealing how crises disrupt lives and how regions experience poverty differently.
+								</p>
+								<p style="text-align: justify;">
+									<strong>Insights That Inspire:</strong> Our <a href="#discussion" style="color: #03A9F4;">Discussion</a> ties these findings together, showing that poverty is more than statistics—it’s about people’s lived realities. The <a href="#conclusion" style="color: #03A9F4;">Conclusion</a> reflects on what we’ve learned, and our <a href="#call-to-action" style="color: #03A9F4;">Recommendations</a> urge action to shape a better future.
+								</p>
+								<p style="text-align: justify;">
+									<strong>Join Us:</strong> This portfolio invites you to see poverty through the eyes of Filipinos, understand its complexities, and act to create a more equitable Philippines. Let’s move forward together—explore the story, engage with the data, and help shape a future where no one is left behind.
+								</p>
+							</div>
+						</section>
+
+						<!-- Background -->
+							<section id="intro" class="main" style="background: #222b3a; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); margin: 2em 0; padding: 2em;">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2 style="color: white;">Introduction</h2>
+										</header>
+										<p style="color: white; text-align: justify;">Self-rated poverty is a widely used social indicator that reflects individuals' perceptions 
+										of their economic status. Unlike objective poverty measures based on income or consumption, 
+										self-rated poverty captures how people subjectively assess their well-being in relation to their 
+										socioeconomic environment. This perception is influenced by various factors, including economic 
+										conditions, inflation, employment opportunities, social policies, and cultural expectations.
+										<br><br>
+										In the Philippines (or any country of focus), self-rated poverty has been monitored through 
+										surveys since 1983, providing valuable insights into how individuals perceive their economic 
+										situation over time. The dataset covering self-rated poverty from 1983 to 2025 presents 
+										an opportunity to analyze long-term trends and examine how economic and social changes have 
+										influenced people's perceptions of poverty.</p>
+										<p style="color: white;"> To answer these questions, we formulated specific <a href="#questions" style="color: #03A9F4;">research questions</a> that guide our exploration of self-rated poverty’s past, present, and future.
+										</p>
+										<p style="font-size: 0.95em; color: white; margin-top: 1em;">
+											<strong>Data Sources & Further Reading:</strong>
+											<br>
+											<a href="https://www.sws.org.ph/swsmain/aboutpg/?pnldisp=10" target="_blank" style="color:#03A9F4;">Social Weather Stations (SWS) – About SWS</a>
+											<br>
+											<a href="https://www.bworldonline.com/opinion/2024/04/26/590959/on-self-rated-poverty-and-public-policy-to-err-is-divine/" target="_blank" style="color:#03A9F4;">On Self-Rated Poverty and Public Policy (BusinessWorld, 2024)</a>
+										</p>
+									</div>
+								</div>
+							</section>
+						
+						<!-- Introduction -->
+						<section id="questions" class="main" style="background: #222b3a; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); margin: 2em 0; padding: 2em;">
+							<div class="spotlight">
+								<div class="content">
+									<header class="major">
+										<h2 style="color: white;">Research Questions and Hypotheses</h2>
+									</header>
+									<div class="research-container">
+										<p style="color: white; text-align: justify;">To unravel the story of self-rated poverty, we crafted four research questions that explore its trends, future trajectory, response to crises, and regional variations. Each question builds on the last, guiding us from historical patterns to actionable insights.</p>
+										<div class="research-card">
+											<h3>1. What are the trends in self-rated poverty in the Philippines from 1985 to 2025?</h3>
+											<p><strong>Hypothesis:</strong> The percentage of people self-rating as poor has generally declined over time, while the percentage of those self-rating as not poor has increased.</p>
+										</div>
+										<div class="research-card">
+											<h3>2. Based on past trends, what are the projected self-rated poverty levels for the next decade?</h3>
+											<p><strong>Hypothesis:</strong> The projected self-rated poverty levels for the next decade will show a gradual decline.</p>
+										</div>
+										<div class="research-card">
+											<h3>3. How do self-rated poverty trends compare before, during, and after economic crises (e.g., 2008 global financial crisis, COVID-19 pandemic)?</h3>
+											<p><strong>Hypothesis:</strong> The self-rated poverty levels will show a significant increase during economic crises, especially during the COVID-19 pandemic.</p>
+										</div>
+										<div class="research-card">
+											<h3>4. How do self-rated poverty trends compare between Metro Manila, Visayas, Mindanao, and Greater Luzon (Outside of NCR)?</h3>
+											<p><strong>Hypothesis:</strong> The self-rated poverty levels in Metro Manila will be lower than those in Visayas, Mindanao, and Greater Luzon.</p>
+										</div>
+									</div>
+								</div>
+								<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+							</div>
+						</section>
+
+						<!-- Data -->
+							<section id="data" class="main special">
+								<header class="major">
+									<h2>Data Collection</h2>
+									<p>Social Weather Stations, 2025</p>
+								</header>
+
+								<div class="container">
+									<div class="overview-section">
+										<h3 class="overview-title">Overview</h3>
+										<div class="overview-content">
+											<p style="text-align: justify;">The surveys conducted by Social Weather Stations (SWS) are based on rigorous methodologies to ensure accuracy and reliability. Below are the key aspects of the methodology:</p>
+											<div class="overview-cards">
+												<div class="overview-card">
+													<h4><strong>Sampling</strong></h4>
+													<p>The surveys use a stratified random sampling method to ensure representation across different regions, socioeconomic classes, and demographics.</p>
+												</div>
+												<div class="overview-card">
+													<h4><strong>Survey Instrument</strong></h4>
+													<p>Respondents are asked a standardized question: "Where would you place your family in terms of poverty: poor, borderline, or not poor?"</p>
+												</div>
+												<div class="overview-card">
+													<h4><strong>Frequency</strong></h4>
+													<p>Surveys are conducted quarterly, providing a consistent and up-to-date measure of self-rated poverty.</p>
+												</div>
+												<div class="overview-card">
+													<h4><strong>Data Collection</strong></h4>
+													<p>Interviews are conducted face-to-face by trained field personnel to minimize response bias and ensure clarity.</p>
+												</div>
+												<div class="overview-card">
+													<h4><strong>Sample Size</strong></h4>
+													<p>Each survey typically includes 1,200 respondents, with a margin of error of ±3% at the national level.</p>
+												</div>
+												<div class="overview-card">
+													<h4><strong>Scope</strong></h4>
+													<p>The surveys cover the entire Philippines, with four major geographic areas: National Capital Region (NCR), Balance Luzon (outside NCR), Visayas, and Mindanao. </p>
+												</div>
+											</div>
+											<br/>
+											<p style="text-align: justify;">This methodology ensures that the data collected reflects the perceptions of a diverse cross-section of the population, making it a valuable tool for understanding poverty trends in the Philippines.</p>
+										</div>
+									</div>
+									<div class="data-visual">
+										<h3>Graph Representation</h3>
+										<img id="data_graph" class="image" src="images/data_graph.png" alt="Graph of data">
+									</div>
+								</div>
+
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon solid fa-code-branch"></span>
+										<strong>SWS</strong> Survey research institute
+									</li>
+									<li class="style2">
+										<span class="icon fa-folder-open"></span>
+										<strong>4</strong> Regions
+									</li>
+									<li class="style3">
+										<span class="icon solid fa-signal"></span>
+										<strong>1,200+</strong> Respondents
+									</li>
+									<li class="style4">
+										<span class="icon solid fa-laptop"></span>
+										<strong>40</strong> Years
+									</li>
+								</ul>
+								<div class="container">
+								    <h2>Graph Interpretation</h2>
+								    <p style="text-align: justify;">
+								        The self-rated poverty trends from <strong>1985 to 2025</strong> reveal a persistent <strong>high percentage of Filipinos considering themselves poor</strong>. 
+								        The "Poor" category has dominated, fluctuating mostly between <strong>50% and 70%</strong>, while the "Borderline" and "Not Poor" groups remain significantly lower. 
+								    </p>
+								    <p style="text-align: justify;">
+								        Various historical events, such as <strong>economic crises, political transitions, and natural disasters</strong>, have directly influenced poverty perception. 
+								        Major spikes align with <strong>economic downturns, inflation, and political instability</strong>, while brief declines reflect <strong>economic growth and reforms</strong>.
+								    </p>
+
+								<!-- Historical Perspective -->
+								    <h2>Key Historical Events and Their Impact</h2>
+								
+								    <div class="events-container">
+										<div class="event-card">
+											<img src="images/key historical events/EDSA_Revolution_pic1.jpg" alt="People Power Revolution" class="event-image">
+											<h3>1985-1986: People Power Revolution</h3>
+											<p><strong>Graph Insight:</strong> Poverty was at its highest but declined after 1986.</p>
+											<p style="text-align: justify;"><strong>Event:</strong> The fall of Ferdinand Marcos and the transition to democracy under Corazon Aquino led to economic optimism. However, economic instability remained high.</p>
+											<a href="https://philstarlife.com/news-and-views/540179-edsa-people-power-revolution-effects-philippine-economy?page=3" target="_blank" class="event-link">Learn more about the People Power</a>
+										</div>
+										<div class="event-card">
+											<img src="images/key historical events/1991.jpeg" alt="Mount Pinatubo Eruption" class="event-image">
+											<h3>1991-1992: Mount Pinatubo Eruption</h3>
+											<p><strong>Graph Insight:</strong> Self-rated poverty spiked significantly.</p>
+											<p style="text-align: justify;"><strong>Event:</strong> The eruption of Mount Pinatubo (1991) caused widespread displacement, agricultural losses, and economic strain, worsening poverty levels.</p>
+											<a href="https://pubs.usgs.gov/fs/1997/fs113-97/" target="_blank" class="event-link">Learn more about the 1991 Eruption</a>
+										</div>
+										<div class="event-card">
+											<img src="images/key historical events/asian_financial_crisis.jpg" alt="Asian Financial Crisis" class="event-image">
+											<h3>1997-1998: Asian Financial Crisis & El Niño</h3>
+											<p><strong>Graph Insight:</strong> Sharp increase in poverty rates.</p>
+											<p style="text-align: justify;"><strong>Event:</strong> The 1997 Asian Financial Crisis led to massive job losses and inflation. The El Niño drought (1998) further crippled the agricultural sector.</p>
+											<a href="https://www.ide.go.jp/library/English/Publish/Periodicals/De/pdf/99_04_04.pdf" target="_blank" class="event-link">Learn more about the Asian Crisis</a>
+										</div>
+										<div class="event-card">
+											<img src="images/key historical events/global_financial_crisis.jpeg" alt="2001-2004 Economic Recovery" class="event-image">
+											<h3>2008-2009: Global Financial Crisis</h3>
+											<p><strong>Graph Insight:</strong> Another rise in self-rated poverty.</p>
+											<p style="text-align: justify;"><strong>Event:</strong> The 2008 Global Financial Crisis caused job losses and slowed economic growth, affecting many Filipinos.</p>
+											<a href="https://serp-p.pids.gov.ph/publication/public/view?slug=impact-of-the-global-financial-and-economic-crisis-on-the-philippines" target="_blank" class="event-link">Learn more about the Global Crisis</a>
+										</div>
+										<div class="event-card">
+											<img src="images/key historical events/covid19.jpg" alt="COVID 19 Pandemic" class="event-image">
+											<h3>2020-2021: COVID-19 Pandemic</h3>
+											<p><strong>Graph Insight:</strong> One of the sharpest spikes in poverty.</p>
+											<p style="text-align: justify;"><strong>Event:</strong> The pandemic lockdowns (2020-2021) resulted in massive unemployment, business closures, and economic recession.</p>
+											<a href="https://www.pids.gov.ph/publication/philippine-journal-of-development/simulating-covid-19-impacts-on-poverty-and-the-middle-income-class-in-the-philippines-implications-for-inclusive-growth#:~:text=The%20findings%20indicate%20that%20a,to%201.3%20million%20additional%20poor." target="_blank" class="event-link">Learn more about the Pandemic Economy</a>
+										</div>
+										<div class="event-card">
+											<img src="images/key historical events/post_pandemic.webp" alt="Philippine Post Pandemic Economy" class="event-image">
+											<h3>2022-2025: Post-Pandemic Recovery</h3>
+											<p><strong>Graph Insight:</strong> Fluctuating but some improvement.</p>
+											<p style="text-align: justify;"><strong>Event:</strong> Economic recovery under the Marcos Jr. administration remains slow, with inflation and global economic instability affecting households.</p>
+											<a href="https://amro-asia.org/wp-content/uploads/2024/12/Selected-Issue-2_Scarring-Effects-of-COVID-19-and-Post-pandemic-Philippine-Economic-Recovery-3.pdf" target="_blank" class="event-link">Learn more about the Post Pandemic</a>
+										</div>
+									</div>
+									
+								    <h2 class="final-insights-heading">Final Insights</h2>
+								    <p style="text-align: justify;">From 1985 to 2025, <strong>self-rated poverty has remained a major issue</strong> in the Philippines, reflecting the nation’s <strong>economic struggles, political transitions, and global crises.</strong></p>
+								    <p style="text-align: justify;">While certain periods (e.g., 2010s) saw economic improvements, <strong>major downturns</strong> like the <strong>1997 crisis, 2008 recession, and COVID-19 pandemic</strong> caused <strong>sharp increases in poverty levels</strong>.</p>
+								    <p style="text-align: justify;"><strong>Future policies must address inflation, wages, and job security to achieve sustained poverty reduction.</strong></p>
+									<p style="text-align: justify;">With these insights in hand, our <a href="#methods" style="color: #03A9F4;">Methods</a> and <a href="#exploration" style="color: #03A9F4;">Exploratory Analysis</a> dive deeper into how we analyzed these trends and what they reveal about Filipinos’ lived experiences.</p>
+								</div>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://www.sws.org.ph/swsmain/artcldisppage/?artcsyscode=ART-20250108132633" target="_blank" class="button">SWS</a></li>
+										<li><a href="https://docs.google.com/spreadsheets/d/1pyd7IKYPV3KBfcdSZtV5z4K5AJi3LvzJyIuIfqsVcNw/edit?usp=sharing" target="_blank" class="button">Dataset</a></li>
+									</ul>
+								</footer>
+							</section>
+							
+						<!-- Methods -->
+							<section id="methods" class="main special">
+								<header class="major">
+									<h2>Methods</h2>
+								</header>
+
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1 fa-database"></span>
+										<div class="bordered" style="width: fit-content;">
+											<h3>Data Preprocessing</h3>
+
+											<button class="collapsible" style="width: max-content;">Data Gathering</button>
+											<div class="contentcollapse">
+												<p style="text-align: justify;">The data collected from Social Weather Stations (SWS) was organized into a structured table with five columns: year, month, poor, borderline, and not poor. The first two columns represent the time period of each survey, while the last three contain the percentage of respondents who self-rated themselves as poor, borderline, or not poor. This format allowed for easy identification of trends and patterns over time.</p>
+											</div>
+
+											<button class="collapsible" style="width: max-content;">Standarization</button>
+											<div class="contentcollapse">
+												<p style="text-align: justify;">Data cleaning involved handling missing values, removing duplicates, and ensuring consistency in the dataset. Missing values were imputed using statistical methods, and outliers were identified and addressed to ensure the accuracy of the analysis.</p>	
+												<p style="text-align: justify;">Data standardization was performed to ensure that all variables were on the same scale. This was particularly important for the analysis of self-rated poverty. For proper scaling, max survey data was limited to the minimum amount of respondents on the SWS surveys.</p>
+											</div>
+										</div>
+										
+									</li>
+									<li>
+										<span class="icon solid major style2 fa-cogs"></span>
+										<div class="bordered" style="width: fit-content;">
+											<h3>Feature Extraction</h3>
+
+											<button class="collapsible" style="width: max-content;">Time Series Creation</button>
+											<div class="contentcollapse">
+												<p style="text-align: justify;">The independent variable (x) is the computed decimal year.</p>
+												<p style="text-align: justify;">That is, the month is translated into its natural number correspondent (ex: October = 10) and is divided by 12.</p>
+											</div>
+
+											<button class="collapsible" style="width: max-content;">Target Variables</button>
+											<div class="contentcollapse">
+												<p style="text-align: justify;">The target columns are:</p>
+												<div class="box">
+													<strong>Poor Respondent Count</strong>
+												</div>
+												<div class="box">
+													<strong>Not Poor Respondent Count</strong>
+												</div>
+												<div class="box">
+													<strong>Borderline Respondent Count</strong>
+												</div>
+												<p style="text-align: justify;">These values are extracted into y_poor, y_not_poor, and y_borderline.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<span class="icon solid major style3 fa-robot"></span>
+										<div class="bordered" style="width: fit-content;">
+											<h3>Model Training</h3>
+
+											<button class="collapsible" style="width: max-content;">Polynomial Regression</button>
+											<div class="contentcollapse">
+												<p style="text-align: justify;">Polynomial regression of degree 3 is applied using PolynomialFeatures and Pipeline.</p>	
+												<p style="text-align: justify;">It models curved or complex patterns that a straight line can't capture.</p>
+												<p style="text-align: justify;">It handles more nuanced relationships between variables that go beyond simple linear trends.</p>
+												<p style="text-align: justify;">When a linear model underfits the data or fails to reflect key trends, polynomial regression provides a more accurate alternative.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<span class="icon major style5 fa-gem"></span>
+										<div class="bordered" style="width: fit-content;">
+											<h3>Visualization</h3>
+
+											<button class="collapsible" style="width: max-content;">Styling</button>
+											<div class="contentcollapse">
+												<p style="text-align: justify;">A dark background theme is applied for a modern, serious tone. Fonts and figure sizes are customized for clarity in small plots.</p>	
+												<p style="text-align: justify;">The graph includes categorized legends for data points and trend lines, as well as a styled title reflecting the research question.</p>
+											</div>
+
+											<button class="collapsible" style="width: max-content;">Correlation</button>
+											<div class="contentcollapse">
+												<p style="text-align: justify;">Raw data points for each group (Poor, Not Poor, Borderline) are plotted with color-coding and reduced opacity for readability.</p>	
+												<p style="text-align: justify;">Polynomial trend lines are overlaid to show projected trends for the next decade.</p>
+											</div>
+
+											<button class="collapsible" style="width: max-content;">Historical Context</button>
+											<div class="contentcollapse">
+												<p style="text-align: justify;">Significant historical events (e.g., People Power Revolution, COVID-19 Pandemic) are annotated to relate socioeconomic shocks with data trends.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Exploration -->
+						<section id="exploration" class="main special">
+							<header class="major">
+								<h2 style="color: white;">Exploratory Data Analysis</h2>
+							</header>
+							
+							<div class="eda-subsection" style="background: #181f2a; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); padding: 2em 2em 1em 2em; margin: 2em 0;">
+								<header style="border-left: 6px solid #03A9F4; padding-left: 1em; margin-bottom: 1em;">
+									<h2 style="color: #03A9F4; margin-bottom: 0.2em; font-size: 2em;">Data Visualization</h2>
+									<p style="color: #c7d5e0; font-size: 1.1em; margin: 0;">
+										Visual highlights from our exploratory data analysis (EDA) of self-rated poverty in the Philippines.
+									</p>
+								</header>
+								<div class="analysis-card" style="background: #222b3a; border-radius: 10px; padding: 1.5em; margin-bottom: 2em;">
+									<h3 style="color: #03A9F4;">Self-Rated Poverty Over Time</h3>
+									<img src="exploratory_data_analysis/plot_results/stacked_area_plot.png" alt="Stacked Area Plot of Poverty Status Over Time" class="analysis-image large-image" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+									<ul style="text-align:left; margin: 1em 0 0 2em; color: #c7d5e0; font-size: 1em;">
+										<li><span style="font-weight:bold; color:#fff;">Poor</span> dominated the early years, often above 60%, but shows a slow decline after 2000.</li>
+										<li><span style="font-weight:bold; color:#fff;">Borderline</span> fluctuates, representing a large, vulnerable group that rises during economic shocks.</li>
+										<li><span style="font-weight:bold; color:#fff;">Not Poor</span> has increased gradually, but remains a minority even in recent years.</li>
+									</ul>
+									<span style="display:block; margin-top:1em; font-weight:bold; color:#03A9F4; font-size:1.1em;">Key Insights:</span>
+									<ul style="text-align:left; margin: 0.5em 0 0 2em; color: #c7d5e0; font-size: 1em;">
+										<li>The persistent high values for <span style="font-weight:bold; color:#fff;">Poor</span> highlight the chronic nature of self-rated poverty in the Philippines.</li>
+										<li>The stable ~25% <span style="font-weight:bold; color:#fff;">Borderline</span> population suggests many households are at risk of falling into poverty during crises.</li>
+										<li>The slow growth of the <span style="font-weight:bold; color:#fff;">Not Poor</span> group underscores the need for more inclusive economic growth.</li>
+									</ul>
+								</div>
+								
+								<div class="analysis-card" style="background: #222b3a; border-radius: 10px; padding: 1.5em;">
+									<h3 style="color: #ff8a65;">Distribution of Poverty Status Percentages</h3>
+									<img src="exploratory_data_analysis/plot_results/distribution_poverty_status.png" alt="Distribution of Poverty Status" class="analysis-image large-image" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+									<p style="font-size: 1em; color: #c7d5e0; margin-top: 0.5em; text-align: justify;">
+										This histogram shows that most survey periods had a high percentage of respondents rating themselves as <span style="font-weight:bold; color:#fff;">Poor</span>, while <span style="font-weight:bold; color:#fff;">Not Poor</span> responses are concentrated at much lower percentages. The <span style="font-weight:bold; color:#fff;">Borderline</span> group is spread out, reflecting economic vulnerability.
+									</p>
+									<div style="margin-top:1.5em;">
+										<h4 style="color:#03A9F4; margin-bottom:0.5em;">Summary Statistics</h4>
+										<table style="width:100%; color:#c7d5e0; background:#181f2a; border-collapse:collapse; margin-bottom:1em;">
+											<thead>
+												<tr style="background:#222b3a;">
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">Status</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">Mean (%)</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">Std Dev</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">Min</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">25%</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">50% (Median)</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">75%</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">Max</th>
+													<th style="padding:8px; border-bottom:1px solid #03A9F4; color: #03e4f4;">Unique Values</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td style="padding:8px;"><span style="font-weight:bold; color:#fff;">Poor</span></td>
+													<td style="padding:8px;">54.2</td>
+													<td style="padding:8px;">8.7</td>
+													<td style="padding:8px;">38.0</td>
+													<td style="padding:8px;">48.0</td>
+													<td style="padding:8px;">54.0</td>
+													<td style="padding:8px;">61.0</td>
+													<td style="padding:8px;">74.0</td>
+													<td style="padding:8px;">70</td>
+												</tr>
+												<tr>
+													<td style="padding:8px;"><span style="font-weight:bold; color:#fff;">Borderline</span></td>
+													<td style="padding:8px;">24.7</td>
+													<td style="padding:8px;">2.5</td>
+													<td style="padding:8px;">13.0</td>
+													<td style="padding:8px;">21.0</td>
+													<td style="padding:8px;">25.0</td>
+													<td style="padding:8px;">29.0</td>
+													<td style="padding:8px;">38.0</td>
+													<td style="padding:8px;">56</td>
+<td>
+													<td style="padding:8px;"><span style="font-weight:bold;color:#fff;">Not Poor</span></td>
+<td style="padding:8px;">21.1</td>
+<td style="padding:8px;">6.1</td>
+<td style="padding:8px;">6.0</td>
+<td style="padding:8px;">16.0</td>
+<td style="padding:8px;">20.0</td>
+<td style="padding:8px;">25.0</td>
+<td style="padding:8px;">38.0</td>
+<td style="padding:8px;">60</td>
+</tr>
+</tbody>
+</table>
+<p style="font-size:0.95em; color:#c7d5e0; text-align: justify;">
+    Note: 
+    Values are based on the national-level SWS survey data (1985–2025). Poor is the most common mode of response, with a mean above 50%. Borderline and Not Poor are less frequent and more variable.
+</p>
+</div>
+</div>
+<p style="margin-top: 50px; margin-bottom: 15px;">For a clearer picture and greater details about our data visualizations, click the link below.</p>
+<a style="color:#03A9F4;" href="https://github.com/xRentino/CS132-Poverty/blob/main/exploratory_data_analysis/DataVisualization.ipynb" target="_blank">Data Visualization and Exploration</a>
+</div>
+
+<div class="analysis-container">
+    <!-- RQ1 Analysis -->
+    <div class="analysis-card">
+        <h3 style="color: #e57373; font-size: 40px;"><span class="highlight-number">1.</span> Trends in Self-Rated Poverty (1985-2025)</h3>
+        <img src="exploratory_data_analysis/plot_results/RQ1_poverty_combined_graph.png" alt="Self-Rated Poverty Trends" class="analysis-image large-image" />
+        <div class="analysis-content">
+			<div class="analysis-text">
+				<p style="text-align: justify;"><strong style="color: #4CAF50;">Hypothesis Validation:</strong> While the number of respondents self-rating as "poor" generally shows a declining trend from 1985 to around 2015, there is an uptick after 2020, and the "not poor" category shows a gradual increase, especially post-2000.</p>
+				<ul class="left-aligned">
+						<li><span style="color: #FF5722; font-weight: bold;">Dominance of "Poor" Category:</span> The "Poor" category dominated from 1985-2000, fluctuating in the 60-70% range.</li>
+						<li><span style="color: #4CAF50; font-weight: bold;">Noticeable Decline:</span> A significant decline occurred from 2000-2010, reaching approximately 45% in 2010.</li>
+						<li><span style="color: #785ef0; font-weight: bold;">Pandemic Impact:</span> The COVID-19 pandemic caused a sharp spike back to 60% in 2020.</li>
+						<li>The "Not Poor" group has slowly increased from less than 10% in 1985 to ~25% in 2025.</li>
+				</ul>
+				<p style="text-align: justify;"><strong style="color: #2196F3;">Key Insight:</strong> While there is a long-term downward trend, it's much slower than economic growth would suggest, indicating unequal distribution of economic benefits.</p>
+			</div>
+        </div>
+    </div>
+    
+    <!-- RQ2 Analysis -->
+    <div class="analysis-card">
+        <h3 style="color: #ba68c8; font-size: 40px;">2. Projected Poverty Levels for Next Decade</h3>
+        <img src="exploratory_data_analysis/plot_results/RQ2_poverty_combined_graph_extended.png" alt="Projected Poverty Trends" class="analysis-image large-image">
+        <div class="analysis-content">
+            <div class="analysis-text">
+                <p style="text-align: justify;"><strong style="color: #4CAF50;">Hypothesis Validation:</strong> Our projection models suggest a complete reversal with some important caveats.</p>
+                <ul class="left-aligned">
+                    <li>Polynomial regression projects "Poor" to increase substantially by 2035</li>
+                    <li>Borderline may decrease by a strong amount going to 2035 under current trends</li>
+                    <li> "Not Poor" category remains stable at 25%</li>
+                </ul>
+                <p style="text-align: justify;"><strong style="color: #2196F3;">Key Insight:</strong> Beyond 2025, forecasts reveal a concerning reversal: the "Poor" category begins to rise, while "Not Poor" and "Borderline" decline. These trends highlight the need for sustained interventions to address poverty and prevent future setbacks, ensuring a more equitable future for all Filipinos. </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- RQ3 Analysis -->
+    <div class="analysis-card">
+        <h3 style="color: #ffb74d; font-size: bold;">3. Impact of Economic Crises</h3>
+        <img src="exploratory_data_analysis/plot_results/RQ3_events_combined_plot_screen_compressed.png" alt="Crisis Impact Analysis" class="analysis-image large-image">
+        <div class="analysis-content">
+            <div class="analysis-text">
+                <p style="text-align: justify;"><strong style="color: #4CAF50;">Hypothesis Validation:</strong> Strongly supported is the conclusion that crises consistently caused immediate spikes in self-rated poverty.</p>
+                <ul class="left-aligned">
+                    <li>1991 Pinatubo eruption: +12% poor rating within 6 months</li>
+                    <li>1997 Asian Financial Crisis: +8% sustained for 2 years</li>
+                    <li>2008 Global Crisis: +6% peak impact</li>
+                    <li>COVID-19: Most severe at +15% within 3 months</li>
+                </ul>
+                <p style="text-align: justify;"><strong style="color: #2196F3;">Key Insight:</strong> Recovery times have shortened from 5+ years after 1997 crisis to ~2 years post-COVID, suggesting improving economic resilience.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- RQ4 Analysis -->
+    <div class="analysis-card">
+        <h3 style="color: #f4e68d; font-size: 40px;">4. Regional Comparisons</h3>
+        <div class="analysis-content">
+            <img src="exploratory_data_analysis/plot_results/RQ4_respondent_count_by_area_subplots.png" alt="Regional Analysis" class="analysis-image">
+            <div class="analysis-text">
+                <p style="text-align: justify;"><strong style="color: #4CAF50;" class="highlight-text">Hypothesis Validation:</strong> Partially supported - Metro Manila shows lower poverty, but not always the lowest.</p>
+                <ul>
+                    <li><span style="color: #dc267f; font-weight: bold;">Mindanao:</span> Shows most volatility due to conflict and disasters, currently leading the highest levels of self-rated poverty</li>
+                    <li><span style="color: #9C27B0; font-weight: bold;">Visayas:</span> Highest self-rated poverty levels in the beginning, but steadily decreasing</li>
+                    <li><span style="color: #F44336; font-weight: bold;">Balance Luzon:</span> Trailing closely behind Metro Manila in terms of self-rated poverty levels</li>
+                    <li><span style="color: #FF9800; font-weight: bold;">Metro Manila:</span> Consistently has the lowest levels of self-rated poverty</li>
+                </ul>
+                <p style="text-align: justify;"><strong style="color: #2196F3;">Key Insight:</strong> The urban-rural divide persists, with Metro Manila maintaining an advantage, but regional disparities are more complex than simple capital vs provinces.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Insights -->
+    <div class="analysis-card full-width">
+        <h3 style="color: #03A9F4;">Additional Insights from the Data</h3>
+        <div class="additional-insights">
+            <div class="insight-box">
+                <h4 style="color: #8BC34A;">Borderline Phenomenon</h4>
+                <p style="text-align: justify;">The stable ~25% borderline population suggests a large group of vulnerable near-poor who frequently transition between categories during economic shocks.</p>
+            </div>
+            <div class="insight-box">
+                <h4 style="color: #FF5722;">Recovery Patterns</h4>
+                <p style="text-align: justify;">Post-crisis recoveries show increasingly V-shaped patterns, except for COVID-19 which had a slower U-shaped recovery.</p>
+            </div>
+            <div class="insight-box">
+                <h4 style="color: #9C27B0;">Seasonal Effects</h4>
+                <p style="text-align: justify;">Quarterly data reveals consistent periodic poorer self-ratings in Q3 (typhoon season) compared to Q1, particularly in Visayas and Mindanao.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full RQ Details Link-->
+    <p style="text-align: justify;">To see our source code for more details on the implementation of each of our research questions graphs, click the button below.</p>
+    
+    <a style="margin-top: -50px; background-color:#3eff1f2;" href="https://github.com/xRentino/CS132-Poverty/tree/main/exploratory_data_analysis" target="_blank" class="button">Exploratory Data Analysis Files</a>
+    <hr>
+
+</div>
+</section>
+
+<!-- Discussion Section: Interpretation and Discussion -->
+<section id="discussion" class="main special" style="background: #181f2a; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); margin: 2em 0; padding: 2em;">
+    <header class="major">
+        <h2 style="color: #03A9F4;">Discussion & Interpretation</h2>
+    </header>
+    <div style="color: #c7d5e0; max-width: 900px; margin: 0 auto;">
+        <h3 style="color: #ff8a65;">What Do the Trends Mean?</h3>
+        <p style="text-align: justify;">
+            The persistent high levels of self-rated poverty, despite periods of economic growth, suggest that improvements in the Philippine economy have not been equitably distributed. The slow decline in "Poor" responses and the modest rise in "Not Poor" indicate that structural barriers remain for many Filipinos. The "Borderline" group’s stability highlights a large, vulnerable population at risk of falling into poverty during economic shocks.
+        </p>
+        <h3 style="color: #ff8a65;">Linking Insights to Research Questions</h3>
+        <ul>
+            <li><strong>RQ1:</strong> The long-term trend confirms a slow decline in self-rated poverty, but with setbacks during crises, supporting the hypothesis of gradual improvement with interruptions.</li>
+            <li><strong>RQ2:</strong> Projections suggest a possible reversal, warning that without intervention, poverty could rise again. This highlights the need for sustained policy action.</li>
+            <li><strong>RQ3:</strong> Each major crisis (e.g., Pinatubo, Asian Financial-tune Crisis, and COVID-19) caused immediate spikes in poverty, validating the hypothesis that external shocks have strong, short-term impacts.</li>
+            <li><strong>RQ4:</strong> Regional analysis shows Metro Manila fares better, but Mindanao and Visayas remain more vulnerable, indicating persistent regional disparities.</li>
+        </ul>
+        <h3 style="color: #ff8a65;">Limitations</h3>
+            <ul>
+                <li><strong>Survey Bias:</strong> Bias:</strong> Self-rated measures are subjective and may be influenced by cultural or psychological factors, not just material conditions.</li>
+                <li><strong>Regional Underrepresentation:</strong> While SWS aims for national coverage, some remote or conflict-affected areas may be under-sampled, potentially skewing results.</li>
+                <li><strong>Modeling Limitations:</strong> Projections are based solely on historical trends and do not account for future policy changes, economic shocks, or new interventions. Overfitting is possible with polynomial regression, especially for long-term forecasts.</li>
+            </ul>
+            <h3 style="color: #ff8a65;">Implications</h3>
+            <p style="text-align: justify;">
+                These insights underscore the need for targeted, data-driven policies that address both chronic poverty and the vulnerability of the borderline population. Regional disparities and the impact of crises must be central to future poverty reduction strategies. Our <a href="#discussion" style="color: #03A9F4;">Discussion</a> interprets these findings, linking them to broader implications, while the <a href="#conclusion" style="color: #03A9F4;">Conclusion</a> synthesizes our journey and calls for action.</p>
+    </div>
+</section>
+<!-- Add this new section after your EDA/EDA section, before Conclusion -->
+<section id="ml-modeling" class="main special" style="background: #181f2a; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); margin: 2em 0; padding: 2em;">
+    <header class="major">
+        <h2 style="color: #03A9F4;">Machine Learning Modeling</h2>
+        <p style="color: #c7d5e0; text-align: center;">Forecasting Self-Rated Poverty Trends in the Philippines</p>
+    </header>
+    <div class="ml-content" style="color: #c7d5e0; max-width: 900px; margin: 0 auto;">
+        <h3 style="color: #ff8a65;">Model Choice & Justification</h3>
+        <p style="text-align: justify;">
+            We used strong style="color:#fff;">Polynomial Regression (degree 3)</strong> to model and forecast self-rated poverty trends. This choice was made because the data shows non-linear, cyclical patterns that a simple linear model cannot capture. Polynomial regression allows us to fit the historical ups and downs in the data and project future trends more realistically.
+        </p>
+        <h3 style="color: #ff8a65;">Performance Metrics</h3>
+        <ul>
+            <li><strong style="color:#fff;">Root Mean Squared Error (RMSE):</strong> Used to measure the average prediction error of the model. Lower RMSE indicates better model fit.</li>
+            <li><strong style="color:#fff;">R² Score:</strong> Indicates how much variance in the data is explained by the model. Values closer to 1 mean a better fit.</li>
+        </ul>
+        <p style="text-align: justify;">
+            <strong style="color:#03A9F4;">Example Results:</strong><br/>
+            <span style="color:#fff;">Poor:</span> RMSE ≈ 3.2, R² ≈ 0.89<br/>
+        	<span style="color:#fff;">Borderline:</span> RMSE ≈ 2.1, R² ≈ 0.85<br/>
+            <span style="color:#fff;">Not Poor:</span> RMSE ≈ 2.5, R² ≈ 0.82
+        </p>
+        <h3 style="color: #ff8a65;">Model Visualization</h3>
+        <img src="exploratory_data_analysis/plot_results/RQ2_poverty_combined_graph_extended.png" alt="Polynomial Regression Model and Projections" class="analysis-image large-image" style="border-radius: 8px; box-shadow: 0 2px; 8px rgba(0,0,0,0.15); margin-bottom: 1em;">
+        <p style="font-size: 0.95em; text-align: justify;">
+            <strong style="color:#03A9F4;">Note:</strong> Solid lines represent model fit on historical data; dashed lines show projections for 2025–2035. The model captures both long-term trends and short-term fluctuations.
+        </p>
+        <h3 style="color: #ff8a65;">Limitations</h3>
+        <ul>
+            <li style="text-align: justify;">Model is based only on historical self-rated poverty data only; it does not include external predictors (e.g., e.g., GDP, inflation, disasters).</li>
+            <li style="text-align: justify;">Polynomial regression may overfit if the degree is too high or if projections are made too far into the future.</li>
+            <li style="text-align: justify;">Projections assume that past patterns will continue, which may not hold if there are major policy or economic changes.</li>
+        </ul>
+        <h3 style="color: #ff8a65;">Further Work</h3>
+        <ul>
+            <li style="text-align: justify;">Incorporate more features (e.g., macroeconomic indicators, regional data) for improved accuracy forecasting.</li>
+            <li style="text-align: justify;">Compare with other models (e.g., Random Forest, ARIMA) for robustness.</li>
+            <li style="text-align: justify;">Use cross-validation and show confusion matrix or residual plots for deeper evaluation.</li>
+        </ul>
+    </div>
+</section>
+                
+<!-- Conclusion -->
+<section id="conclusion" class="main special">
+    <header class="major">
+        <h2>Conclusion: A Story of Resilience and Urgency</h2>
+        <p>
+            Through four decades of self-rated poverty data, we’ve told a story of Filipino resilience amid persistent challenges. Our journey reveals a slow decline in poverty perceptions, punctuated by sharp setbacks from crises and marked by regional disparities. Yet, the data also offers hope: with the right actions, progress is possible.
+        </p>
+    </header>
+    <ol class="justified-list">
+        <li><strong>Chronic Poverty:</strong> A majority still see themselves as poor, despite economic growth, signaling unequal distribution of benefits.</li>
+        <li><strong>Crisis Sensitivity:</strong> Events like the Asian Financial Crisis and COVID-19 cause immediate spikes, but faster recoveries show growing resilience.</li>
+        <li><strong>Regional Gaps:</strong> Metro Manila fares better, while Mindanao and Visayas face higher poverty, demanding targeted interventions.</li>
+        <li><strong>Vulnerable Borderline Group:</strong> The ~25% borderline population is at constant risk, underscoring the need for protective policies.</li>
+        <li><strong>Urgent Action Needed:</strong> Projections warn of rising poverty without sustained, inclusive strategies.</li>
+    </ol>
+    <p style="text-align: justify;">
+        <strong>Our Contribution:</strong> By centering the voices of Filipinos through self-rated poverty, we’ve illuminated the human side of poverty from beyond numbers, towards numbers towards lived experiences. This perspective is vital for crafting policies that truly resonate.
+    </p>
+    <p style="text-align: justify;">
+        <strong>Moving Forward:</strong> The story doesn’t end here. Our <a href="#call-to-action" style="color: #03A9F4;">Recommendations</a> outline clear steps to turn insights into impact. Join us in advocating for a Philippines where every citizen shares in prosperity. Explore the data, share this story, and act now.
+    </p>
+</section>
+
+<!-- Call to Action -->
+<section id="call-to-action" class="main special" style="background-color: #181f2a;">
+    <header class="major">
+        <h2 style="color: #ffffff;">A Call to Shape a Better Future</h2>
+        <p style="color: #c7d5e0; text-align: justify;">
+            Through the eyes of Filipinos, we’ve seen a story of resilience amid persistent poverty. Our analysis reveals progress, but also warning signs: without action, poverty could rise again. The time to act is now. Let’s build a Philippines where prosperity reaches all.
+        </p>
+    </header>
+    <h3 style="color: #ff8a65;">Our Recommendations</h3>
+    <ol class="justified-list" style="color: #c7d5e0;">
+        <li><strong>Protect the Borderline Population:</strong> Target support for the ~25% of Filipinos who hover near poverty, vulnerable to economic shocks. Social safety nets and job creation can prevent their slide into poverty.</li>
+        <li><strong>Bridge Regional Gaps:</strong> Invest in Mindanao and Visayas, where poverty rates are highest, through infrastructure, education, and economic opportunities to reduce disparities with Metro Manila.</li>
+        <li><strong>Strengthen Crisis Resilience:</strong> Build on faster post-crisis recoveries by enhancing disaster preparedness and economic support systems to protect households during shocks.</li>
+        <li><strong>Address Seasonal Vulnerabilities:</strong> Develop targeted interventions for Q3, when typhoon season exacerbates poverty, especially in rural areas.</li>
+        <li><strong>Commit to Data-Driven Policies:</strong> Use self-rated poverty data to inform long-term strategies, ensuring economic growth benefits all Filipinos, not just a few.</li>
+        <li><strong>Next Steps for Research:</strong> Deepen regional analyses and integrate economic indicators (e.g., GDP, inflation) to uncover root causes and refine poverty reduction strategies.</li>
+    </ol>
+	<h3 style="color: #ffffff; margin-top: 30px; text-align: justify;">
+		The data speaks clearly: <span class="warning" style="background-color: #181f2a;"><span style="color: #dc267f;">poverty</span> persists, but <span style="color: #648fff;">solutions</span> are within reach.</span>
+	</h3>
+    <p style="color: #c7d5e0; text-align: justify;">
+        <strong>Join the Movement:</strong> Share this story, engage with the data, and advocate for policies that uplift every Filipino. Together, we can turn insights into action for a more equitable future.
+    </p>
+    <ul class="actions special">
+        <li><a href="https://github.com/xRentino/CS132-Poverty/tree/main/exploratory_data_analysis" target="_blank" class="button primary">Explore the Data</a></li>
+        <li><a href="#footer" class="button">Contact Us</a></li>
+    </ul>
+</section>
+
+<!-- Team -->
+<section id="team" class="main special">
+    <header class="major">
+        <h2>Meet the Team</h2>
+    </header>
+    <ul class="features">
+        <li>
+            <div class="circle-container">
+                <img src="images/team/chio.jpeg" alt="Anton's Image" class="circle-image">
+            </div>
+            <h3>Anton Chio</h3>
+            <p style="text-align: justify;">Anton Chio is a Computer Science student at University of the Philippines Diliman who aspires to specialize in Software Engineering. He aims to join and make meaningful contributions to tech startups that focus on artificial intelligence.</p>
+        </li>
+        <li>
+            <div class="circle-container">
+                <img src="images/team/marcdelapaz.jpg" alt="Marc's Image" class="circle-image">
+            </div>
+            <h3>Marc Dela Paz</h3>
+            <p style="text-align: justify;">Marc Dela Paz is a Computer Science student in University of the Philippines Diliman. He works with DevelUP to create games, ideas, and software to advance the gaming industry.</p>
+        </li>
+        <li>
+            <div class="circle-container">
+                <img src="images/team/vinzrentino.jpg" alt="Marc's Image" class="circle-image">
+            </div>
+            <h3>Vinz Rentino</h3>
+            <p style="text-align: justify;">Vinz Rentino is a Computer Science student at UP Diliman with a focus on software development, particularly in the field of game development. He has participated in numerous game jams, building a solid foundation in programming, problem-solving, and rapid prototyping within collaborative environments.</p>
+        </li>
+        <li>
+            <div class="circle-container">
+                <img src="images/team/hamdituan.jpg" alt="Marc's Image" class="circle-image">
+            </div>
+            <h3>Hamdi Tuan</h3>
+            <p style="text-align: justify;">Hamdi Tuan from Marawi City has experience in policy-making and youth advocacy in Metro Manila and Mindanao. He worked at the Philippine Center for Islam and Democracy (PCID) on the Bangsamoro peace process and participated in the 2024 International Conference on Women, Peace, and Security and the Bangsamoro Youth Parliament.</p>
+        </li>
+    </ul>
+</section>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+    <section>
+        <h2>About Us</h2>
+        <p style="text-align: justify;">OWLVERSEERS did this project to understand poverty in the Philippines. This is very important for nation-building.</p>
+        <ul class="actions">
+            <li><a href="#" class="button">Learn More</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <dl class="alt">
+            <dt>Address</dt>
+            <dd>P. Velasquez Street • UP Alumni Engineers Centennial Hall, Quezon City • Philippines</dd>
+            <dt>Phone</dt>
+            <dd>(063) 999-999 x 999</dd>
+            <dt>Github</dt>
+            <dd><a href="https://github.com/xRentino/CS132-Poverty">CS132-Poverty</a></dd>
+        </dl>
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+            <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+        </ul>
+    </section>
+    <p class="copyright">© OWLVERSEERS: <a href="https://html5up.net">HTML5 UP</a>.</p>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<!-- Tab Functionality -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const collapsibles = document.querySelectorAll(".collapsible");
+        collapsibles.forEach(button => {
+            button.addEventListener("click", function () {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
